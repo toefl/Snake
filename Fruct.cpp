@@ -5,15 +5,15 @@
 using namespace std;
 Fruct::Fruct(void)
 {
-	srand(time(0));
-	Scale = 25;
+     srand(time(0));
+     Scale = 25;
 }
 Fruct::~Fruct(void)
 {
 }
-void Fruct::Set_fruct() // случайным образом получаем фрукт на поле
+void Fruct::Set_fruct()
 {
-	x=rand() % 20;
+    x=rand() % 20;
     y=rand() % 20;
 }
 int Fruct::Get_fruct_x()
@@ -24,9 +24,9 @@ int Fruct::Get_fruct_y()
 {
 	return y;
 }
-void Fruct::Draw_Fruct() // прорисовка фркута
+void Fruct::Draw_Fruct() 
 {
-	glColor3f(0.0,1.0,1.0);
+    glColor3f(0.0,1.0,1.0);
     glRectf(x*Scale,y*Scale,(x+1)*Scale,(y+1)*Scale);
 }
 

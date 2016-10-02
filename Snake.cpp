@@ -18,9 +18,8 @@ Snake::~Snake(void)
   glColor3f(red,green,blue);
   for (int i=0;i<num;i++)
     {
-		 //glColor3f(red,green,blue);
-		 glRectf(s[i].x*scale, s[i].y*scale, (s[i].x+1)*scale, (s[i].y+1)*scale);
-	 }
+	glRectf(s[i].x*scale, s[i].y*scale, (s[i].x+1)*scale, (s[i].y+1)*scale);
+    }
  }
 
  void Snake::TickSnake(Field lea,Fruct m[], int best)  //функция движения змейки
